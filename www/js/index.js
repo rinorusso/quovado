@@ -47,11 +47,13 @@ var app = {
 
         console.log('Received Event: ' + id);
 		
-		 var ref = window.open('http://www.rinorusso.it', '_self', 'location=no');
+		window.open(encodeURI("http://www.rinorusso.it"), '_self', 'location=no');
+		
+		// var ref = window.open('http://www.rinorusso.it', '_self', 'location=no');
         // ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
         // ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
         // ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
         // ref.addEventListener('exit', function(event) { alert(event.type); });
-
+		
     }
 };
